@@ -24,3 +24,6 @@ $ git clone https://github.com/kuwa0224/git-mergepoint
 $ export PATH=`pwd`/git-mergepoint:$PATH
 ```
 
+# Todo
+
+- In big repository, too slow...
