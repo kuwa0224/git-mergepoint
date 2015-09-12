@@ -41,13 +41,16 @@ __END__
 
 =head1 NAME
 
-xxxxxxx.pl - Do something
+git-mergepoint - show merge commit of spefified commit
+
+With this, you can see what pull-request merged the spefified commit.
 
 =head1 SYNOPSIS
 
-  $ xxxxxxx.pl args
+  $ git mergepoint [-v] <commit>
 
 =head1 OPTIONS
 
+  --verbose, -v      show merge commit in detail
   --help,    -h      show this message
   --man,     -m      full documentaion
