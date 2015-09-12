@@ -22,7 +22,7 @@ main: {
     }
 
     for my $commit_hash (@merged_commit_hash_list) {
-        my $is_found = system( "git log HEAD...$commit_hash --pretty=%H | grep $target_commit_hash") ? 0 : 1;
+        my $is_found = system( "git log HEAD...$commit_hash --pretty=%H | grep -q $target_commit_hash") ? 0 : 1;
 
         next unless $is_found;
 
