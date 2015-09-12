@@ -1,14 +1,19 @@
-# NAME
+# USAGE
 
-git-mergepoint
+```
+NAME
+    git-mergepoint - show merge commit of spefified commit
 
-# DESCRIPTION
+    With this, you can see what pull-request merged the spefified commit.
 
-This can show a merged-commit that target commit is merged.
+SYNOPSIS
+      $ git mergepoint [-v] <commit>
 
-# SYNOPSIS
-
-git mergepoint [-v] <target-commit-hash>
+OPTIONS
+      --verbose, -v      show merge commit in detail
+      --help,    -h      show this message
+      --man,     -m      full documentaion
+```
 
 # INSTALL
 
