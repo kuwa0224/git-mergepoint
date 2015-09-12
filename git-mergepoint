@@ -26,15 +26,13 @@ main: {
 
         next unless $is_found;
 
-        print "=== FOUND ===\n";
-
         my $option = $is_verbose ? '-m' : '';
         print `git show $option $commit_hash`;
 
         exit;
     }
 
-    print "=== NOT FOUND ===\n";
+    print "not found: $target_commit_hash\nit's may be commited by -ff\n";
     exit 2;
 }
 
